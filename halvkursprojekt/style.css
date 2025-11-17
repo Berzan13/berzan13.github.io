@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: system-ui;
+}
+
+header, main, footer {
+    padding: 3%;
+}
+
+main {
+    min-height: 100vh;
+    padding: 0;
+}
+
+header div {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header div h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.menuBtn {
+    background-color: transparent;
+    border: none;
+    justify-self: left;
+    margin-left:5px
+}
+
+.menuBtn span {
+    font-size: 1.8rem;
+    color: rgb(36, 36, 36);
+}
+
+.home {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center; /*används för att positionera flex-items på x-axeln om flex-direction:row;*/
+    align-items: flex-end; /*används för att positionera flex-items vertikalt på y-axeln flex-direction:row;*/
+    padding-bottom: 10%;
+}
+
+.description {
+    text-align: center;
+    padding: 0 3%;
+}
+
+.description h1 {
+    text-transform: uppercase;
+    color: white;
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.description h5 {
+    margin-top: 10px;
+    color: rgb(230, 230, 230);
+    font-family: Arial;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.description button {
+    margin-top: 15px;
+    padding: 3%;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-size: 0.85rem;
+    background-color: rgb(231, 231, 231);
+}
+
+.home video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.home2 {
+    height: auto;
+    background-color: transparent;
+}
+
+.home2 button {
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    padding: 2%;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.home2 h3 {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+
+.grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 2%;
+    row-gap: 20px;
+}
+
+.imgBox img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgBox {
+    aspect-ratio: 1 / 1;
+}
+
+.textBox {
+    padding: 2%;
+    font-family: system-ui;
+    font-weight: 400;
+}
+
+.textBox h4 {
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+
+.textBox h6 {
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.home3 {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        text-align: center;
+}
+
+
+.text p {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.home4 {
+    height: 30vh;   
+    position: relative;  
+    overflow: hidden;    
+}
+
+.home4 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+footer {
+    padding: 0;
+}
+
+.home5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background-color: grey;
+}
+
+.home5 div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid red;
+    gap: 20px;
+}
+
+.home5 div div {
+    text-align: center;
+}
+
+
+@media(min-width:700px) {
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width:1000px) {
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
