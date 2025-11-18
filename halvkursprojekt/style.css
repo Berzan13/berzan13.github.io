@@ -19,6 +19,10 @@ header div {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+header {
+    background-color: red;
+}
+
 header div h3 {
     font-size: 1.6rem;
     font-weight: 400;
