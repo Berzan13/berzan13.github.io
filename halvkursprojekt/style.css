@@ -19,9 +19,6 @@ header div {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-header {
-    background-color: red;
-}
 
 header div h3 {
     font-size: 1.6rem;
@@ -40,6 +37,43 @@ header div h3 {
 .menuBtn span {
     font-size: 1.8rem;
     color: rgb(36, 36, 36);
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    background-color: white;
+    z-index: 1;
+    padding: 3%;
+}
+
+.sidebar ul {
+    list-style: none;
+    line-height: 60px;
+}
+
+.sidebar ul li a {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.sidebar.active {
+    transform: translateX(0);
+}
+
+.sidebar div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidebar div button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: black;
 }
 
 .home {

@@ -1,4 +1,5 @@
 const grid = document.querySelector('.grid')
+const sidebar = document.querySelector('.sidebar')
 
 const products = [
     {
@@ -40,3 +41,7 @@ products.forEach(product => {
 })
 
 grid.innerHTML = productsHTML
+
+function toggleMenu() {
+    sidebar.classList.toggle('active')
+}
