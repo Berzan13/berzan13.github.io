@@ -1,3 +1,6 @@
 Om du gjort ändringar via github eller hemma så kör detta kommando INNAN du börjar jobba i skolan
 
 git pull origin main
+
+
+ändrad online
