@@ -1,4 +1,7 @@
-const grid = document.querySelector('.grid')
+
+const grid = document.querySelector('.grid-s')
+const sidebar = document.querySelector('.sidebar')
+
 
 const products = [
     {
@@ -21,6 +24,18 @@ const products = [
         img: 'https://thegallerist.se/cdn/shop/files/Darkbluesida.jpg?v=1754412245&width=535',
         price: 2699
     },
+
+     {
+        label: 'Moritz Winter',
+        img: 'https://thegallerist.se/cdn/shop/files/Darkbluesida.jpg?v=1754412245&width=535',
+        price: 2699
+    },
+
+     {
+        label: 'Moritz Winter',
+        img: 'https://thegallerist.se/cdn/shop/files/Darkbluesida.jpg?v=1754412245&width=535',
+        price: 2699
+    },
 ]
 
 
@@ -29,7 +44,7 @@ let productsHTML = '';
 products.forEach(product => {
     productsHTML += `
     <div class="product">
-                        <div class="imgBox">
+                    <div class="imgBox">
                             <img src="${product.img}" alt="">
                         </div>
                         <div class="textBox">
@@ -40,3 +55,8 @@ products.forEach(product => {
 })
 
 grid.innerHTML = productsHTML
+
+
+function toggleMenu() {
+    sidebar.classList.toggle('active')
+}
