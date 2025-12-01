@@ -3,4 +3,4 @@ Om du gjort ändringar via github eller hemma så kör detta kommando INNAN du b
 git pull origin main
 
 
-ändrad lokalt
+ändrad online
