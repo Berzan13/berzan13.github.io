@@ -33,8 +33,66 @@
     grid-template-columns: 1fr 1fr;
     gap: 5px;
     overflow-y: auto;
-    max-height: 650px;
+    max-height: 690px;
 }
+
+/*About.html*/
+
+.about {
+    position: relative;
+    width: fit-content; /* keeps the h4 centered relative to the image */
+    margin: 0 auto;     /* centers the whole block horizontally */
+}
+
+.about h4 {
+    position: absolute;
+    top: 70px;          /* move vertically */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;       /* optional */
+    font-size: 0.5rem;    /* optional */
+    text-transform: uppercase;
+    font-family: system-ui;
+}
+
+.about img {
+    display: block;
+}
+
+.about-text {
+    margin-top: 20px;
+    padding-top: 3%;
+}
+
+.about-text h3 {
+    padding-left: 2%;
+}
+
+.paragraph {
+    padding: 2%;
+}
+
+.social-medias {
+    margin-top: 65px;
+}
+
+.social-media-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.social-media-grid div h5 {
+    text-align: center;
+}
+
+.social-media-grid div {
+    transition: transform 0.3s ease; /* smooth animation */
+}
+
+.social-media-grid div:hover {
+    transform: scale(1.05); /* gör kortet lite större vid hover */
+}
+
 
 html {
      overflow: auto;       /* or scroll if needed */
@@ -136,6 +194,8 @@ header div h3 {
 .home2 {
     height: auto;
     background-color: transparent;
+    animation: show 0.3s linear;
+    animation-timeline:view(block 100% 0%)
 }
 
 .home2 button {
@@ -205,7 +265,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-        text-align: center;
+    text-align: center;
+    animation: show 0.1s linear;
+    animation-timeline:view(block 100% 0%)
 }
 
 
@@ -217,7 +279,21 @@ img {
 .home4 {
     height: 30vh;   
     position: relative;  
-    overflow: hidden;    
+    overflow: hidden;
+   animation: show 0.3s linear;
+   animation-timeline:view(block 100% 0%)
+}
+
+@keyframes show{
+  
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+  
 }
 
 .home4 video {
