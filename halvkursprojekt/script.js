@@ -1,5 +1,3 @@
-
-const grid = document.querySelector('.grid-s')
 const sidebar = document.querySelector('.sidebar')
 
 
@@ -79,10 +77,28 @@ products.forEach(product => {
     </div>`
 })
 
-grid.innerHTML = productsHTML
+const grid = document.querySelector('.grid-s');
+
+if (grid) {
+    // endast kör på shoes.html
+    grid.innerHTML = productsHTML;
+}
 
 
 function toggleMenu() {
     sidebar.classList.toggle('active')
 }
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+// Observera alla tre klasser
+document.querySelectorAll('.home2, .home3, .home4').forEach(el => {
+  observer.observe(el);
+});
