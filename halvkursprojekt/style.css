@@ -35,6 +35,7 @@
     max-height: 690px;
 }
 
+
 /*About.html*/
 
 .about {
@@ -149,6 +150,14 @@ header div h3 {
     padding-bottom: 10%;
 }
 
+.shop-btn {
+    transition: transform 0.3s ease;
+}
+
+.shop-btn:hover {
+    transform: scale(1.1);
+}
+
 .description {
     text-align: center;
     padding: 0 3%;
@@ -206,7 +215,7 @@ header div h3 {
   transform: translateY(0);
 }
 
-.home2 button {
+.show-btn{
     display: block;
     margin: auto;
     background-color: transparent;
@@ -215,6 +224,12 @@ header div h3 {
     text-transform: uppercase;
     background-color: white;
     border-radius: 2px;
+    transition: transform 0.4s ease;
+}
+
+.show-btn:hover {
+    cursor: pointer;
+      transform: scale(1.08);
 }
 
 .home2 h3 {
@@ -240,6 +255,11 @@ header div h3 {
 .imgBox img {
     height: 100%;
     object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.imgBox img:hover {
+    opacity: 0.7;
 }
 
 .imgBox {
@@ -307,7 +327,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; 
+    z-index: 1; 
 }
 
 footer {
@@ -316,7 +336,6 @@ footer {
 
 
 .information {
-    min-height: auto;
     background-color: rgb(41, 41, 41);
     padding: 5%;
 }
@@ -410,7 +429,12 @@ footer {
     text-decoration: underline;
 }
 
+@media(min-width:600px) {
 
+    header {
+        padding: 2%;
+    }
+}
 
 @media(min-width:700px) {
 
@@ -431,6 +455,7 @@ footer {
 
     .grid-s {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
     }
 
     header {
@@ -439,17 +464,11 @@ footer {
 
 }
 
-@media(min-width:600px) {
-
-    header {
-        padding: 2%;
-    }
-}
 
 @media(min-width:1200px) {
 
     header {
-        padding: 1.5%;
+        padding: 1%;
     }
 
     .home2 button {
@@ -461,9 +480,44 @@ footer {
         font-size: 2rem;
     }
 
-   .information {
+    .home {
+        height: 45vh;
+    }
+
+    .description h1 {
+        font-size: 2.5rem;
+    }
+
     
-   }
+    .description h5 {
+        font-size: 1.3rem;
+    }
+
+    .home4 {
+        height: 60vh;
+    }
+
+    .information {
+        padding: 1%;
+    }
+
+    .textBox h6 {
+        font-size: 1rem;
+    }
+
+    .textBox h4 {
+        font-size: 1.05rem;
+        font-weight: 500;
+    }
+
+    .grid-s {
+        max-height: 800px;
+        padding: 1.5%;
+    }
+
+    .shoes {
+        display: none;
+    }
 }
 
 
