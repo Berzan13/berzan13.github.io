@@ -40,7 +40,7 @@
 
 .about {
     position: relative;
-    width: fit-content; /* keeps the h4 centered relative to the image */
+    width: 100%;
     margin: 0 auto;     /* centers the whole block horizontally */
 }
 
@@ -73,13 +73,17 @@
 }
 
 .social-medias {
-    margin-top: 65px;
+   border: 1px solid red;
 }
 
 .social-media-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, auto);
+    gap: 120px;                             
+    justify-content: center;               
+    justify-items: center;          
 }
+
 
 .social-media-grid div h5 {
     text-align: center;
@@ -518,6 +522,17 @@ footer {
     .shoes {
         display: none;
     }
+
+    .about img {
+        height: 60vh;
+        object-fit: cover;
+        opacity: 0.8;
+    }
+
+    .social-media-grid div {
+     width: 15vh;
+    }
+
 }
 
 
