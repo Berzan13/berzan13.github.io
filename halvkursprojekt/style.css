@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     scroll-behavior: smooth;
     font-family: system-ui;
@@ -14,7 +14,7 @@
     margin-top: 5%;
     padding-left: 4%;
     font-size: 1.5rem;
-    display: inline-block; /*tog bort standard margin*/
+    display: inline-block;
 }
 
 .text-p {
@@ -41,19 +41,10 @@
 .about {
     position: relative;
     width: 100%;
-    margin: 0 auto;     /* centers the whole block horizontally */
+    margin: 0 auto; 
 }
 
-.about h4 {
-    position: absolute;
-    top: 70px;          /* move vertically */
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;       /* optional */
-    font-size: 0.5rem;    /* optional */
-    text-transform: uppercase;
-    font-family: system-ui;
-}
+
 
 .about img {
     display: block;
@@ -233,7 +224,7 @@ header div h3 {
     display: block;
     margin: auto;
     background-color: transparent;
-    padding: 2%;
+    padding: 2.5%;
     margin-bottom: 10px;
     text-transform: uppercase;
     background-color: white;
@@ -382,7 +373,7 @@ footer {
     font-size: 1.2rem;
 }
 
-.policy-list {
+.policy-list { 
     color: white;
     text-transform: uppercase;
 }
@@ -390,17 +381,23 @@ footer {
 .policy-grid {
     margin-top: 15px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    grid-template-columns: repeat(3, auto); /* 3 items per row */
     gap: 10px;
-    align-items: center;
+    justify-content: center;
+}
+
+ .policy-grid div {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    row-gap: 10px;
 }
 
 .policy-grid a {
-    position: relative;
     text-decoration: none;
     color: rgb(230, 230, 230);
     font-size: 0.8rem;
     padding-right: 12px;
+   
 }
 
 .policy-grid a::after {
@@ -451,25 +448,22 @@ footer {
 }
 
 @media(min-width:700px) {
-
-    .grid-i {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
     .grid-s {
          grid-template-columns: 1fr 1fr 1fr;
+         max-height: 80vh;
     }
+
 }
 
 @media(min-width:1000px) {
 
     .grid-i {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+         max-width: 800px;
+         margin: 0 auto;
     }
 
-    .grid-s {
+     .grid-s {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 5px;
     }
 
     header {
@@ -480,6 +474,20 @@ footer {
 
 
 @media(min-width:1200px) {
+
+    .grid-i {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+         max-width: 1200px; /* testa olika värden */
+         margin: 0 auto;
+    }
+
+
+     .grid-s {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
 
     header {
         padding: 1%;
@@ -552,10 +560,31 @@ footer {
         margin-left: 18px;
     }
 
-.divider {
-    width: 60vw;
-    margin-left: 40px;
-}
+    .divider {
+        width: 60vw;
+        margin-left: 40px;
+    }
+
+    .home2 h3 {
+        font-size: 1.8rem;
+    }
+
+    .policy-list {
+        padding: 2%;
+    }
+
+    .policy-grid {
+        gap: 300px;;
+    }
+
+    .policy-grid a {
+    color: rgb(230, 230, 230);
+    font-size: 0.95rem;
+    }
+
+    header h3 {
+        font-size: 1.8rem;
+    }
 
 }
 
@@ -601,7 +630,7 @@ footer {
 }
 
 .sidebar ul li:hover {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(248, 247, 247);
 }
 
 

@@ -20,34 +20,46 @@ const products = [
      {
         label: 'Madrid Summer',
         img: 'https://thegallerist.se/cdn/shop/files/MadridSneaker.jpg?v=1747932695&width=535',
-        price: 2699
+        price: 2199
     },
 
      {
         label: 'Vienna Black',
         img: 'https://thegallerist.se/cdn/shop/files/svartnymain.jpg?v=1760952076&width=535',
-        price: 2699
+        price: 1999
     },
 
      {
         label: 'Moritz Winter',
         img: 'https://thegallerist.se/cdn/shop/files/Darkbluesida.jpg?v=1754412245&width=535',
-        price: 2699
+        price: 1875
     },
 
      {
         label: 'Moritz Brown',
         img: 'https://thegallerist.se/cdn/shop/files/Brown_outside.jpg?v=1760082343&width=535',
-        price: 2699
+        price: 2750
     },
 
      {
         label: 'Moritz Brown',
         img: 'https://thegallerist.se/cdn/shop/files/gronnymain.jpg?v=1760952379&width=535',
-        price: 2699
+        price: 2550
     },
 
     {
+        label: 'Moritz Brown',
+        img: 'https://thegallerist.se/cdn/shop/files/nyblaskomainbild.jpg?v=1755701694&width=535',
+        price: 1889
+    },
+
+    {
+        label: 'Moritz Brown',
+        img: 'https://thegallerist.se/cdn/shop/files/milanonavymain.jpg?v=1761035801&width=535',
+        price: 2699
+    },
+
+      {
         label: 'Moritz Brown',
         img: 'https://thegallerist.se/cdn/shop/files/nyblaskomainbild.jpg?v=1755701694&width=535',
         price: 2699
