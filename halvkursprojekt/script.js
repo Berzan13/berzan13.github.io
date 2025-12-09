@@ -1,4 +1,5 @@
 const sidebar = document.querySelector('.sidebar')
+const links = document.querySelectorAll('.sidebar a');
 
 
 const products = [
@@ -101,6 +102,12 @@ function toggleMenu() {
     sidebar.classList.toggle('active')
 }
 
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+    });
+});
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -110,7 +117,6 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-// Observera alla tre klasser
 document.querySelectorAll('.home2, .home3, .home4').forEach(el => {
   observer.observe(el);
 });
