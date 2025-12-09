@@ -60,7 +60,7 @@
 }
 
 .about-text {
-    margin-top: 20px;
+    margin-top: 1%;
     padding-top: 3%;
 }
 
@@ -69,17 +69,27 @@
 }
 
 .paragraph {
-    padding: 2%;
+    margin-left: 5px;
+    padding: 1%;
+    line-height: 1.5;
+    max-width: 880px;
+}
+
+.divider {
+    margin-top: 15px;
+    border: 0.8px solid rgb(59, 59, 59);
+    width: 80vw;
+    margin-left: 10px;
 }
 
 .social-medias {
-   border: 1px solid red;
+   padding: 5%;
 }
 
 .social-media-grid {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    gap: 120px;                             
+    gap: 60px;                             
     justify-content: center;               
     justify-items: center;          
 }
@@ -532,6 +542,20 @@ footer {
     .social-media-grid div {
      width: 15vh;
     }
+
+    .about-text h3 {
+        font-size: 1.5rem;
+    } 
+    
+    .paragraph {
+        font-size: 1.05rem;
+        margin-left: 18px;
+    }
+
+.divider {
+    width: 60vw;
+    margin-left: 40px;
+}
 
 }
 
