@@ -33,7 +33,7 @@ function BudgetChart({ income, expense }) {
 
 ```
 
-Skapas en pie chart genom chart.js. En ny chart skapas när income eller expense variablerna ändras men först förstörs nuvarande chart (om det finns en) innan en ny skapas. Detta gör att vi undviker dupliceringar. 
+Skapas en pie chart genom chart.js. En ny chart skapas när income eller expense variablerna ändras (här används useEffect med dependencies) men först förstörs nuvarande chart (om det finns en) innan en ny skapas. Detta gör att vi undviker dupliceringar. 
 
 ***
 ## Skapa nya transaktioner
