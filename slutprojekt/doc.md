@@ -1,10 +1,45 @@
 # Dokumentation
 
 
-## React start
+## Kodrubrik
 ```js
-const { useState, useEffect, useRef } = React;
-const { Button, Modal, Box, Typography} = MaterialUI;
+
+
+```
+
+Kort förklaring av ovanstående kod....
+
+***
+## Kodrubrik
+```js
+
+
+```
+
+Kort förklaring av ovanstående kod....
+
+***
+## Kodrubrik
+```js
+
+
+```
+
+Kort förklaring av ovanstående kod....
+
+***
+## Kodrubrik
+```js
+
+
+```
+
+Kort förklaring av ovanstående kod....
+
+***
+## Kodrubrik
+```js
+
 
 ```
 
